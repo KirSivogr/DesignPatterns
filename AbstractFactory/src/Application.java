@@ -1,4 +1,5 @@
 import Android.AndroidSuperAction;
+import Factories.AndroidFactory;
 import Factories.IOSFactory;
 import Interfaces.Interfaces;
 
@@ -10,7 +11,7 @@ public class Application {
             factory = new IOSFactory();
         }
         else if (os.toLowerCase().equals("android")) {
-            factory = new AndroidSuperAction.AndroidFactory();
+            factory = new AndroidFactory();
         }
         else {
             System.out.println("Unknown OS :(");

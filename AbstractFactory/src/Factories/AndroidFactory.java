@@ -28,7 +28,7 @@ public class AndroidFactory implements Interfaces.Factory {
 
     @Override
     public SuperAction superAction() {
-        System.out.println("creating IOS super action");
+        System.out.println("creating Android super action");
         return (SuperAction) new AndroidSuperAction();
     }
 }
